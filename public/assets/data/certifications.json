@@ -1,0 +1,126 @@
+[
+  
+  {
+    "id": 1,
+    "title": "Angular - The Complete Guide",
+    "issuer": "Udemy",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg",
+    "date": "2026",
+    "credentialUrl": "ude.my/UC-62ab9f9d-9164-43ba-8968-37edcd76474e",
+    "previewImage": "/assets/images/certs/angular_certification.pdf",
+    "badge": "Verified",
+    "color": "#A435F0"
+  },
+  {
+    "id": 2,
+    "title": "AWS Academy Graduate - Cloud Foundations",
+    "issuer": "AWS Academy",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+    "date": "2025",
+    "credentialUrl": "https://www.credly.com/go/YCwOx8De",
+    "previewImage": "/assets/images/certs/certification_AWS_Ouedraogo_Hugues_Fawzi.pdf",
+    "badge": "Verified",
+    "color": "#FF9900"
+  },
+  {
+    "id": 3,
+    "title": "EF SET English Certificate (B2 Upper Intermediate)",
+    "issuer": "EF SET",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/4/4c/EF_Education_First_logo_2016.svg",
+    "date": "2026",
+    "credentialUrl": "https://cert.efset.org/aZxRj4",
+    "previewImage": "/assets/images/certs/EF SET Certificate.pdf",
+    "badge": "Verified",
+    "color": "#0091FF"
+  },
+  {
+    "id": 4,
+    "title": "Fortinet Certified Fundamentals in Cybersecurity",
+    "issuer": "Fortinet Training Institute",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Fortinet_logo.svg",
+    "date": "2026",
+    "credentialUrl": "https://training.fortinet.com/admin/tool/certificate/index.php",
+    "previewImage": "/assets/images/certs/Fortinet_Cybersecurity_Certif.pdf",
+    "badge": "Verified",
+    "color": "#E51C23"
+  },
+  {
+    "id": 5,
+    "title": "Technical Introduction to Cybersecurity 3.0 - FRENCH",
+    "issuer": "Fortinet Training Institute",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Fortinet_logo.svg",
+    "date": "2026",
+    "credentialUrl": "#",
+    "previewImage": "/assets/images/certs/intro_cybersecurite_certif.pdf",
+    "badge": "Verified",
+    "color": "#E51C23"
+  },
+  {
+    "id": 6,
+    "title": "CCNA: Introduction to Networks",
+    "issuer": "Cisco Networking Academy",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Cisco_logo_blue_2016.svg",
+    "date": "2025",
+    "credentialUrl": "#",
+    "previewImage": "/assets/images/certs/CCNAITNUpdated20250305-25-76way9.pdf",
+    "badge": "Verified",
+    "color": "#00BCEB"
+  },
+  {
+    "id": 7,
+    "title": "Linux Essentials",
+    "issuer": "Cisco Networking Academy",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Cisco_logo_blue_2016.svg",
+    "date": "2025",
+    "credentialUrl": "#",
+    "previewImage": "/assets/images/certs/LinuxEssentialsUpdate20250527-27-o46vy7.pdf",
+    "badge": "Verified",
+    "color": "#00BCEB"
+  },
+  {
+    "id": 8,
+    "title": "Linux Unhatched",
+    "issuer": "Cisco Networking Academy",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Cisco_logo_blue_2016.svg",
+    "date": "2025",
+    "credentialUrl": "#",
+    "previewImage": "/assets/images/certs/LinuxUnhatchedUpdate20250515-26-wx5wux.pdf",
+    "badge": "Verified",
+    "color": "#00BCEB"
+  },
+  {
+    "id": 9,
+    "title": "Introduction to MongoDB",
+    "issuer": "MongoDB, Inc",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
+    "date": "2025",
+    "credentialUrl": "#",
+    "previewImage": "/assets/images/certs/MongoDB_Certification.pdf",
+    "badge": "Verified",
+    "color": "#47A248"
+  },
+  {
+    "id": 10,
+    "title": "Python Essentials 1",
+    "issuer": "Cisco Networking Academy",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Cisco_logo_blue_2016.svg",
+    "date": "2024",
+    "credentialUrl": "#",
+    "previewImage": "/assets/images/certs/PythonEssentials1Update20250130-27-hstkic.pdf",
+    "badge": "Verified",
+    "color": "#00BCEB"
+  },
+  {
+    "id": 11,
+    "title": "Python Essentials 2",
+    "issuer": "Cisco Networking Academy",
+    "issuerLogo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Cisco_logo_blue_2016.svg",
+    "date": "2025",
+    "credentialUrl": "#",
+    "previewImage": "/assets/images/certs/PythonEssentials2Update20250130-25-tq9jea.pdf",
+    "badge": "Verified",
+    "color": "#00BCEB"
+  }
+
+
+]

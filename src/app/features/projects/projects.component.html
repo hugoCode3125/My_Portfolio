@@ -1,0 +1,122 @@
+
+<section id="projects" class="section">
+  <div class="container">
+
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">Projets</span>
+      <h2 class="section-title">
+        {{ filter() === 'experience' ? 'Expériences professionnelles' : 'Projets Universitaires' }}
+      </h2>
+      <p class="section-desc">
+        {{ filter() === 'experience'
+          ? 'Découvrez mes expériences professionnelles et les contributions réalisées en entreprise.'
+          : 'Une sélection de mes réalisations académiques et personnelles.'
+        }}
+      </p>
+    </div>
+
+    <div class="filter-bar scroll-reveal">
+      <button
+        type="button"
+        class="filter-btn"
+        [class.active]="filter() === 'all'"
+        (click)="setFilter('all')">
+        Projets universitaires 
+      </button>
+
+      <button
+        type="button"
+        class="filter-btn"
+        [class.active]="filter() === 'experience'"
+        (click)="setFilter('experience')">
+        ⭐ Expériences professionnelles ({{ projects().filter(p => p.experience === true).length }})
+      </button>
+    </div>
+
+    <div class="projects-grid">
+
+      @for (project of filteredProjects(); track project.id; let i = $index) {
+        <article
+          class="project-card"
+          [class.featured]="project.experience === true"
+          [style.animation-delay]="(i * 0.1) + 's'">
+
+          <div class="project-header">
+            <div class="project-icon">
+              <span>📁</span>
+            </div>
+
+            <div class="project-meta">
+              <span class="project-date">📅 {{ project.date }}</span>
+
+              @if (project.experience) {
+                @if (project.reportUrl) {
+                  <a
+                    [href]="project.reportUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="github-link"
+                    title="Voir le rapport">
+                    ↗
+                  </a>
+                }
+              } @else {
+                @if (project.githubUrl) {
+                  <a
+                    [href]="project.githubUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="github-link"
+                    title="Voir sur GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12C0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                }
+              }
+            </div>
+          </div>
+
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-desc">{{ project.description }}</p>
+
+          <div class="project-tech">
+            @for (tech of project.technologies; track tech) {
+              <span class="tech-badge">{{ tech }}</span>
+            }
+          </div>
+
+          <div class="project-footer">
+            @if (project.experience === true) {
+              @if (project.reportUrl) {
+                <a
+                  [href]="project.reportUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-view-report">
+                  Voir le rapport ↗
+                </a>
+              }
+            } @else {
+              @if (project.githubUrl) {
+                <a
+                  [href]="project.githubUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-view-github">
+                  Voir sur GitHub →
+                </a>
+              }
+            }
+          </div>
+
+        </article>
+      } @empty {
+        <p class="empty-state">
+          Aucun projet dans cette catégorie pour le moment.
+        </p>
+      }
+
+    </div>
+  </div>
+</section>

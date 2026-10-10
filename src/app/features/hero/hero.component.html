@@ -1,0 +1,58 @@
+<section id="hero" class="hero">
+  <div class="hero-bg">
+    <div class="grid-overlay"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+  </div>
+
+  @if (profile()) {
+    <div class="hero-content animate-in">
+      <div class="badge-row">
+        <span class="status-badge">
+          <span class="status-dot"></span>
+          Disponible pour un stage PFE de 4 à 6 mois
+        </span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="hero-greeting">{{ profile()!.subtitle }}</span>
+      </h1>
+
+      <p class="hero-subtitle">{{ profile()!.title }}</p>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">{{ profile()!.stats.certifications }}+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-number">{{ profile()!.stats.technologies }}+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Projets</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <button class="btn-primary" (click)="scrollToContact()">
+           Me Contacter
+        </button>
+        <button class="btn-ghost" (click)="scrollToProjects()">
+          Voir mes projets <span class="arrow">→</span>
+        </button>
+      </div>
+
+      <div class="tech-tags">
+        @for (tag of ['Angular', 'React', 'Spring Boot', 'Spring AI', 'Spring Cloud', 'Java', 'TypeScript', 'Docker', 'Keycloak']; track tag) {
+          <span class="tech-tag">{{ tag }}</span>
+        }
+      </div>
+    </div>
+  }
+
+</section>

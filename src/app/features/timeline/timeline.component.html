@@ -1,0 +1,39 @@
+<section id="timeline" class="section">
+  <div class="container">
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">Parcours</span>
+      <h2 class="section-title">Parcours Scolaire</h2>
+      <p class="section-desc">Mon itinéraire académique, de la formation militaire à l'ingénierie logicielle</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      @for (item of items(); track item.id) {
+        <div
+          class="timeline-item scroll-reveal"
+          [class.left]="item.side === 'left'"
+          [class.right]="item.side === 'right'"
+        >
+          <div class="timeline-dot" [class.current]="item.type === 'current'">
+            {{ item.icon }}
+          </div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <span class="tl-period">{{ item.period }}</span>
+              @if (item.type === 'current') {
+                <span class="tl-current-badge">
+                  <span class="tl-dot"></span> En cours
+                </span>
+              }
+            </div>
+            <h3 class="tl-institution">{{ item.institution }}</h3>
+            <p class="tl-degree">{{ item.degree }}</p>
+            <p class="tl-location">📍 {{ item.location }}</p>
+            <p class="tl-desc">{{ item.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

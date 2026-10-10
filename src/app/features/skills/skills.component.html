@@ -1,0 +1,56 @@
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">Compétences</span>
+      <h2 class="section-title">Stack Technique</h2>
+      <p class="section-desc">Technologies et outils que j'utilise pour construire des solutions modernes</p>
+    </div>
+
+    <div class="skills-layout scroll-reveal">
+      <div class="category-tabs">
+        @for (cat of skillCategories(); track cat.category) {
+          <button
+            class="cat-tab"
+            [class.active]="activeCategory() === cat.category"
+            (click)="setCategory(cat.category)"
+          >
+            <span class="cat-icon">{{ cat.icon }}</span>
+            <span class="cat-name">{{ cat.category }}</span>
+            <span class="cat-count">{{ cat.skills.length }}</span>
+          </button>
+        }
+      </div>
+
+      <div class="skills-panel">
+        @if (activeCategoryData) {
+          <div class="panel-header">
+            <span class="panel-icon">{{ activeCategoryData.icon }}</span>
+            <h3 class="panel-title">{{ activeCategoryData.category }}</h3>
+          </div>
+          <div class="skills-grid">
+            @for (skill of activeCategoryData.skills; track skill.name) {
+              <div class="skill-card">
+                <div class="skill-icon-wrap">
+                  <img
+                    [src]="skill.icon"
+                    [alt]="skill.name"
+                    (error)="$any($event.target).src='https://placehold.co/48x48/3B82F6/fff?text=' + skill.name[0]"
+                  />
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">{{ skill.name }}</span>
+                  <div class="skill-bar-wrap">
+                    <div class="skill-bar">
+                      <div class="skill-fill" [style.width.%]="skill.level"></div>
+                    </div>
+                    <span class="skill-pct">{{ skill.level }}%</span>
+                  </div>
+                </div>
+              </div>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

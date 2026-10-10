@@ -1,0 +1,19 @@
+{
+  "name": "Hugues Fawzi OUEDRAOGO",
+  "title": "Aspiring Software Engineering & Distributed Computer Systems Student",
+  "subtitle": "Bienvenue sur mon Portfolio",
+  "email": "hugues.ouedraogo2@gmail.com",
+  "github": "https://github.com/hugoCode3125",
+  "linkedin": "https://linkedin.com/in/hugues-fawzi-ouedraogo",
+  "cvUrl": "/assets/Hugues_Fawzi_OUEDRAOGO_CV.pdf",
+  "about": [ "Comprendre le métier, concevoir un système cohérent, structurer son architecture et transformer les besoins en solutions concrètes : c’est cette vision du développement logiciel que je développe au fil de mes projets. Étudiant en Génie Logiciel et Systèmes Informatiques Distribués à l’ENSET Mohammedia, je m’intéresse particulièrement à la conception logicielle et à la construction d’applications robustes, maintenables et évolutives.",
+
+  "J’aborde le développement full-stack à travers l’écosystème Spring, notamment Spring Boot, Angular et React, avec une attention particulière portée à la sécurité applicative et à la gestion des identités et des accès avec Keycloak.",
+
+  "Curieux des nouvelles approches technologiques, j’explore également l’intelligence artificielle, du Machine Learning et du Deep Learning aux applications d’IA générative, en passant par Spring AI, les agents, MCP et le RAG. Mon objectif : concevoir des solutions pertinentes, alliant réflexion architecturale, qualité logicielle et innovation."
+ ],
+  "stats": {
+    "certifications": 10,
+    "technologies": 15
+  }
+}

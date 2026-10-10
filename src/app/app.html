@@ -1,0 +1,25 @@
+<!-- Loading Screen -->
+@if (loading()) {
+  <div class="app-loading">
+    <div class="loader">
+      <div class="loader-ring"></div>
+      <p class="loader-text">Initialisation...</p>
+    </div>
+  </div>
+}
+
+<!-- Main App -->
+<div class="app-wrapper" [class.app-visible]="!loading()">
+  <app-navbar></app-navbar>
+  <main>
+    <app-hero></app-hero>
+    <app-about></app-about>
+    <app-skills></app-skills>
+    <app-projects></app-projects>
+    <app-certifications></app-certifications>
+    <app-timeline></app-timeline>
+    <app-contact></app-contact>
+  </main>
+  <app-footer></app-footer>
+  <app-back-to-top></app-back-to-top>
+</div>

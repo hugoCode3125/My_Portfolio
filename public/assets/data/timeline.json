@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "period": "2024 — Présent",
+    "institution": "ENSET Mohammedia",
+    "degree": "Ingenierie  — Génie Logiciel & Systèmes Informatiques Distribués",
+    "location": "Mohammedia, Maroc",
+    "description": "Formation en ingénierie logicielle axée sur les systèmes distribués, l'architecture microservices, le développement full-stack et les technologies cloud. Projets académiques avancés en Angular, Spring Boot et Intelligence Artificielle.",
+    "icon": "🎓",
+    "type": "current",
+    "side": "right"
+  },
+  {
+    "id": 2,
+    "period": "2022 — 2024",
+    "institution": "Université Chouaib Doukkali",
+    "degree": "Diplôme d'Etude Universitaire Generale (DEUG) — Informatique",
+    "location": "El Jadida, Maroc",
+    "description": "Formation technologique solide couvrant les fondamentaux de la programmation (Java, Python, C), les bases de données relationnelles, le développement web et les réseaux informatiques.",
+    "icon": "🏛️",
+    "type": "completed",
+    "side": "left"
+  },
+  {
+    "id": 3,
+    "period": "2015 — 2022",
+    "institution": "Prytanée Militaire de Kadiogo",
+    "degree": "Baccalauréat Scientifique — Série D (Mathématiques et Sciences Physiques)",
+    "location": "Ouagadougou, Burkina Faso",
+    "description": "Formation d'excellence dans un établissement militaire d'élite. Spécialisation en mathématiques et sciences physiques avec une rigueur académique et disciplinaire exemplaire. Obtention du baccalauréat avec mention Très Bien.",
+    "icon": "⭐",
+    "type": "completed",
+    "side": "right"
+  }
+]

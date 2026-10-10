@@ -1,0 +1,91 @@
+[
+  {
+    "category": "Architecture & Conception",
+    "icon": "🏗️" ,
+    "skills": [
+      { "name": "Design Patterns", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", "level": 80 },
+      { "name": "UML Modeling", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/uml/uml-original.svg", "level": 70 },
+      { "name": "C4 Model", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/uml/uml-original.svg", "level": 60 },
+      { "name": "Event Storming", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", "level": 60 },
+      { "name": "Microservices Architecture", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg", "level": 70 },
+      { "name": "Hexagonal Architecture", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", "level": 60 },
+      { "name": "Domain-Driven Design (DDD)", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", "level": 70 }
+    ]
+  },
+  {
+    "category": "Frontend",
+    "icon": "🖥️",
+    "skills": [
+      { "name": "Angular", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg", "level": 70 },
+      { "name": "React", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", "level": 50 },
+      { "name": "Bootstrap", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg", "level": 70 },
+      { "name": "Tailwind CSS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg", "level": 80 },
+      { "name": "HTML5", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", "level": 90 },
+      { "name": "CSS3", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", "level": 90 }
+    ]
+  },
+  {
+    "category": "Backend",
+    "icon": "⚙️",
+    "skills": [
+      { "name": "Java", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", "level": 90 },
+      { "name": "Spring Boot", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg", "level": 80 },
+      { "name": "Python", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", "level": 80 },
+      { "name": "C", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg", "level": 70 },
+      { "name": "JavaScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", "level": 90 },
+      { "name": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", "level": 80 },
+      { "name": "RESTful APIs", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/restapi/restapi-original.svg", "level": 80 },
+      { "name": "GraphQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg", "level": 50 },
+      { "name": "gRPC", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grpc/grpc-original.svg", "level": 50 }
+      
+    ]
+  },
+  {
+    "category": "Database",
+    "icon": "🗄️",
+    "skills": [
+      { "name": "MySQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", "level": 80 },
+      { "name": "PostgreSQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", "level": 80 },
+      { "name": "MongoDB", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", "level": 70 },
+      { "name": "Oracle", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg", "level": 60 },
+      { "name": "Redis", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg", "level": 40 }
+    ]
+  },
+  {
+    "category": "DevOps & Cloud",
+    "icon": "☁️",
+    "skills": [
+      { "name": "AWS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg", "level": 60 },
+      { "name": "Google Cloud", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg", "level": 50 },
+      { "name": "Docker", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", "level": 70 },
+      { "name": "CI/CD", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg", "level": 60 },
+      { "name": "GitHub Actions", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg", "level": 60 },
+      { "name": "Spring Cloud", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg", "level": 60 }
+    ]
+  },
+  {
+    "category": "Security & Auth",
+    "icon": "🔐",
+    "skills": [
+      { "name": "Keycloak", "icon": "https://www.keycloak.org/resources/images/icon.svg", "level": 70 },
+      { "name": "Spring security", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg", "level": 50 }
+    ]
+  },
+  {
+    "category": "Tools",
+    "icon": "🛠️",
+    "skills": [
+      { "name": "Git", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", "level": 85 },
+      { "name": "GitHub", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", "level": 85 },
+      { "name": "Postman", "icon": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg", "level": 90 }
+    ]
+  },
+  {
+    "category": "AI & Automation",
+    "icon": "🤖",
+    "skills": [
+      { "name": "Spring AI", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg", "level": 70 },
+      { "name": "n8n", "icon": "https://avatars.githubusercontent.com/u/45487711?s=200&v=4", "level": 50 }
+    ]
+  }
+]

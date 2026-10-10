@@ -1,0 +1,45 @@
+<section id="certifications" class="section section-alt">
+  <div class="container">
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">Certifications</span>
+      <h2 class="section-title">Certifications officielles</h2>
+      <p class="section-desc">Certifications officielles validant mes compétences techniques</p>
+    </div>
+
+    <div class="certs-grid">
+      @for (cert of certifications(); track cert.id; let i = $index) {
+        <div
+          class="cert-card scroll-reveal"
+          [style.animation-delay]="(i * 0.1) + 's'"
+          (mouseenter)="hoveredId.set(cert.id)"
+          (mouseleave)="hoveredId.set(null)"
+        >
+          <!-- Preview overlay on hover -->
+          
+
+          <div class="cert-content">
+            <div class="cert-top">
+              <div class="cert-logo-wrap">
+                <img [src]="cert.issuerLogo" [alt]="cert.issuer" class="cert-logo"
+                  (error)="$any($event.target).style.display='none'" />
+              </div>
+              <div class="verified-badge">
+                <span>✓</span> {{ cert.badge }}
+              </div>
+            </div>
+
+            <div class="cert-body">
+              <h3 class="cert-title">{{ cert.title }}</h3>
+              <p class="cert-issuer">{{ cert.issuer }}</p>
+              <span class="cert-date">📅 {{ cert.date }}</span>
+            </div>
+
+            <a [href]="cert.previewImage" target="_blank" class="cert-btn">
+              Voir le certificat ↗
+            </a>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

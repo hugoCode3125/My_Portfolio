@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "title": "INSIDRUN — B2B Lead Marketplace",
+    "date": "Juin 2026 – Août 2026",
+    "description": "Stage PFA chez Zenika Maroc. Contribution à la conception fonctionnelle et à l’architecture d’une marketplace B2B de leads qualifiés. Modélisation avec Event Storming, DDD et C4 Model, conception d’un monolithe modulaire à architecture hexagonale, développement du module Marketplace en React et Spring Boot, traitement événementiel avec Spring Events et automatisation du CI/CD avec GitHub Actions vers Google Cloud Run.",
+    "technologies": [
+      "React",
+      "Spring Boot",
+      "DDD",
+      "Architecture hexagonale",
+      "Spring Events",
+      "GitHub Actions",
+      "Google Cloud Run"
+    ],
+    "reportUrl": "URL_DU_RAPPORT_INSIDRUN",
+    "githubUrl": null,
+    "image": null,
+    "experience": true
+  },
+  {
+    "id": 2,
+    "title": "FinPulse AI — Financial Intelligence Platform",
+    "date": "Février 2026 – Juin 2026",
+    "description": "Conception et développement de fonctionnalités d’analyse financière : exploration d’opportunités avec Discover, suivi personnalisé d’actifs via une Watchlist dynamique, notifications et génération de rapports stratégiques.",
+    "technologies": [
+      "Angular",
+      "Spring Boot",
+      "PostgreSQL",
+      "Keycloak",
+      "REST API"
+    ],
+    "reportUrl" : null, 
+    "githubUrl": "https://github.com/hugoCode3125",
+    "image": null,
+    "experience": false
+  },
+  {
+    "id": 3,
+    "title": "Keycloak IAM — E-commerce Authentication",
+    "date": "Juillet 2025 – Août 2025",
+    "description": "Stage d’initiation chez Switch Maker BF. Conception et mise en place d’un système de gestion des identités et des accès avec Keycloak pour une plateforme e-commerce. Configuration des realms, clients, rôles et flux d’authentification, intégration de la fédération d’identité, développement d’un SPI pour l’authentification par OTP et personnalisation des interfaces et parcours d’authentification.",
+    "technologies": [
+      "Keycloak",
+      "IAM",
+      "SPI",
+      "OTP",
+      "Java",
+      "Sécurité applicative"
+    ],
+    "reportUrl": "URL_DU_RAPPORT_KEYCLOAK",
+    "githubUrl" : null,
+    "image": null,
+    "experience": true
+  },
+  {
+  "id": 4,
+  "title": "AMAFEM — Site vitrine associatif",
+  "date": "2024",
+  "description": "Conception et développement du site web vitrine de l’Association Marocaine des Femmes & Mathématiques (AMAFEM). La plateforme présente l’association, ses missions et ses engagements, tout en mettant en valeur ses activités, ses programmes et ses initiatives en faveur de la promotion des femmes dans les mathématiques.",
+  "technologies": ["Angular", "Spring Boot", "Keycloak", "MySQL", "Docker"],
+  "reportUrl": "https://github.com/votreusername/amafem",
+  "githubUrl": null,
+  "image": null,
+  "experience": true
+  },
+  {
+  "id": 5,
+  "title": "Retour Produits Analysis",
+  "date": "2024",
+  "description": "Développement d’un projet d’analyse des retours de produits visant à identifier les tendances, comprendre les facteurs associés aux retours et exploiter les données historiques pour anticiper les comportements futurs. Le projet combine exploration des données, analyse statistique et visualisation afin de dégager des informations utiles à la prise de décision.",
+  "technologies": ["Python", "pandas", "scikit-learn", "matplotlib", "Jupyter"],
+  "githubUrl": "https://github.com/hugoCode3125/Plateforme-de-Gestion-Produits",
+  "reportUrl" : null,
+  "image": null,
+  "experience": false
+  },
+  {
+    "id": 6,
+    "title": "Algorithmes de Tri — C + GNUPLOT",
+    "date": "2023",
+    "description": "Implémentation et benchmarking de plusieurs algorithmes de tri (QuickSort, MergeSort, HeapSort, BubbleSort) en langage C. Génération de graphiques de performance comparatifs via GNUPLOT pour analyser la complexité temporelle empirique.",
+    "technologies": ["C", "GNUPLOT", "Makefile", "Shell"],
+    "githubUrl": "https://github.com/hugoCode3125/Etude-Comparative-Algo-de-tri",
+    "reportUrl": null,
+    "image": null,
+    "experience": false
+  },
+  {
+  "id": 7,
+  "title": "Autres projets",
+  "date": "En continu",
+  "description": "Au-delà de mes projets présentés ici, je continue d’explorer de nouvelles technologies et de relever des défis de développement à travers diverses réalisations. Retrouvez l’ensemble de mes projets, découvrez leur implémentation et explorez mon évolution technique directement sur mon profil GitHub.",
+  "technologies": ["Java", "Spring Boot", "Angular", "React", "Python", "IA"],
+  "githubUrl": "https://github.com/hugoCode3125",
+  "reportUrl":null,
+  "image": null,
+  "experience": false
+}
+]
