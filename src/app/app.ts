@@ -36,10 +36,8 @@ export class App implements AfterViewInit {
 ngAfterViewInit() {
   setTimeout(() => this.loading.set(false), 900);
 
-  const elements = document.querySelectorAll('.scroll-reveal');
-
   const observer = new IntersectionObserver(
-    entries => {
+    (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('revealed');
@@ -49,26 +47,20 @@ ngAfterViewInit() {
     },
     {
       threshold: 0.05,
-      rootMargin: '0px 0px -30px 0px'
+      rootMargin: '0px 0px 0px 0px'
     }
   );
 
-  elements.forEach(el => observer.observe(el));
-
-  // Sécurité : révéler les éléments que l'observateur
-  // n'aurait pas détectés après le chargement.
-  setTimeout(() => {
+  const observeElements = () => {
     document.querySelectorAll('.scroll-reveal:not(.revealed)')
-      .forEach(el => {
-        const rect = el.getBoundingClientRect();
+      .forEach(el => observer.observe(el));
+  };
 
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          el.classList.add('revealed');
-          observer.unobserve(el);
-        }
-      });
-  }, 1200);
+  observeElements();
+
+  // Réobserve les éléments après le rendu des données asynchrones.
+  setTimeout(observeElements, 500);
+  setTimeout(observeElements, 1500);
 }
-
 
 }

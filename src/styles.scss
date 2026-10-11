@@ -256,3 +256,9 @@ body {
   .section { padding: 2rem 0 !important; }
 }
 
+/* Fix définitif : éviter les sections bloquées invisibles */
+.scroll-reveal {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
