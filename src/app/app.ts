@@ -33,23 +33,34 @@ import { BackToTopComponent } from './shared/components/back-to-top.component';
 export class App implements AfterViewInit {
   loading = signal(true);
 
-  ngAfterViewInit() {
-    setTimeout(() => this.loading.set(false), 900);
+ngAfterViewInit() {
+  setTimeout(() => this.loading.set(false), 900);
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
-    );
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.05,
+      rootMargin: '0px 0px 0px 0px'
+    }
+  );
 
-    setTimeout(() => {
-      document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
-    }, 1000);
-  }
+  const observeElements = () => {
+    document.querySelectorAll('.scroll-reveal:not(.revealed)')
+      .forEach(el => observer.observe(el));
+  };
+
+  observeElements();
+
+  // Réobserve les éléments après le rendu des données asynchrones.
+  setTimeout(observeElements, 500);
+  setTimeout(observeElements, 1500);
+}
+
 }

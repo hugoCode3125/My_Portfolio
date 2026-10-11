@@ -42,6 +42,16 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "optimization": {
+  "scripts": true,
+  "styles": {
+    "minify": true,
+    "inlineCritical": true
+  },
+  "fonts": {
+    "inline": false
+  }
+},
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
